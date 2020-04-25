@@ -1,0 +1,84 @@
+// footer style
+footer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: orange;
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        max-width: 600px;
+        background-color: orange;
+
+        li {
+            display: block;
+            padding: 0 10px;
+            margin: auto 0;
+
+
+            a {
+                span {
+                    display: block;
+                    width: 40px;
+                    height: 40px;
+                }
+                .facebook {
+                    background: url('../img/footer/facebook.svg') center/cover no-repeat;
+                }
+                .instagram {
+                    background: url('../img/footer/instagram.svg') center/cover no-repeat;
+                }
+                .vkontakte {
+                    background: url('../img/footer/vkontakte.svg') center/cover no-repeat;
+                }
+            }
+        }
+    }
+    .contacts {
+        max-width: 600px;
+        h4 {
+            font-size: 17px;
+            font-weight: 600;
+            color: black;
+            margin: 5px 10px;
+        }
+        ul {
+            display: flex;
+            flex-direction: column;
+
+            li {
+                margin: 5px 0;
+                display: block;
+                font-size: 14px;
+                font-weight: 600;
+                color: black;
+            }
+
+            li:nth-child(1):before {
+                content: '';
+                display: inline-block;
+                width: 16px;
+                height: 15px;
+                margin-right: 5px;
+                background: url('../img/footer/phone.svg') center/cover no-repeat;
+            }
+            li:nth-child(2):before {
+                content: '';
+                display: inline-block;
+                width: 18px;
+                height: 17px;
+                margin-right: 5px;
+                background: url('../img/footer/gps.svg') center/cover no-repeat;
+            }
+            li:nth-child(3):before {
+                content: '';
+                display: inline-block;
+                width: 19px;
+                height: 15px;
+                margin-right: 5px;
+                background: url('../img/footer/email.svg') center/cover no-repeat;
+            }
+        }
+    }
+}

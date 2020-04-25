@@ -1,0 +1,109 @@
+body {
+    font-family: $mainFont;
+    // font-size: $mainFontSize;
+    // font-weight: $mainFontWeight;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    .img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        background: url('../img/body.jpg') no-repeat;
+        z-index: -1;
+    }
+    .about_us {
+        display: block;
+        padding: 2% 10%;
+        background-color: white;
+    
+        h2 {
+            font-size: 30px;
+            font-weight: 700;
+            text-align: center;
+            color: rgb(63, 63, 63);
+            margin-bottom: 15px;
+        }
+    
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+    
+            li {
+                display: block;
+                padding: 10px;
+                max-width: 300px;
+                span {
+                    display: block;
+                    width: 100%;
+                    height: 200px;
+                    margin-bottom: 30px;
+                }
+    
+                .POPULAR_GOODS_span1 {
+                    background: url('../img/POPULAR_GOODS/1one.jpg') center/cover no-repeat;
+                }
+                .POPULAR_GOODS_span2 {
+                    background: url('../img/POPULAR_GOODS/2two.jpg') center/cover no-repeat;
+                }
+                .POPULAR_GOODS_span3 {
+                    background: url('../img/POPULAR_GOODS/3thee.jpg') center/cover no-repeat;
+                }
+                .POPULAR_GOODS_span4 {
+                    background: url('../img/POPULAR_GOODS/4fore.jpg') center/cover no-repeat;
+                }
+    
+                h3 {
+                    font-size: 18px;
+                    font-weight: 700;
+                    text-align: center;
+                    color: rgb(54, 54, 54);
+                }
+    
+                p {
+                    text-align: center;
+                    font-size: 16px;
+                    color: rgb(54, 54, 54);
+                    margin: 15px 0;
+                }
+            }
+    
+            li:hover  {
+                background-color: orange;
+                border-radius: 5px;
+            }
+        }
+    }
+    
+    .SPECIAL_OFFER {
+        background-color: inherit;
+        padding: 50px 250px;
+        h2 {
+            font-size: 30px;
+            color: white;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        p {
+            font-size: 18px;
+            color: white;
+            text-align: center;
+        }
+        button {
+            display: block;
+            font-size: 20px;
+            font-weight: 600;
+            color: white;
+            background-color: orange;
+            padding: 20px 30px;
+            margin: 20px auto;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: white;
+            color: orange;
+        }
+    }
+}
